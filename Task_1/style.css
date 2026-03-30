@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #9dd9ff 0%, #dff4ff 65%, #96d96b 65%, #6fb84f 100%);
+    font-family: Arial, sans-serif;
+}
+
+.scene {
+    position: relative;
+    width: 700px;
+    height: 500px;
+}
+
+.sun {
+    position: absolute;
+    top: 40px;
+    right: 70px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #ffd54f;
+    box-shadow: 0 0 30px rgba(255, 213, 79, 0.8);
+}
+
+.house {
+    position: absolute;
+    left: 50%;
+    bottom: 70px;
+    transform: translateX(-50%);
+    width: 320px;
+}
+
+.roof {
+    position: relative;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-bottom: 130px solid #9c4f2d;
+}
+
+.chimney {
+    position: absolute;
+    top: 28px;
+    left: 58px;
+    width: 36px;
+    height: 90px;
+    background: #7a3f24;
+}
+
+.house-body {
+    position: relative;
+    width: 320px;
+    height: 220px;
+    margin: 0 auto;
+    background: #f2c38b;
+    border: 4px solid #8b5a3c;
+}
+
+.window {
+    position: absolute;
+    top: 45px;
+    left: 55px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: #9fe8ff;
+    border: 8px solid #ffffff;
+    box-shadow: inset 0 0 0 4px #6cbad1;
+}
+
+.door {
+    position: absolute;
+    right: 55px;
+    bottom: 0;
+    width: 78px;
+    height: 130px;
+    background: #6f4a2f;
+    border: 4px solid #4e311f;
+    border-bottom: none;
+    border-radius: 40px 40px 0 0;
+}
+
+.door::after {
+    content: "";
+    position: absolute;
+    top: 60px;
+    right: 12px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #f6d365;
+}
+
+.ground {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background: #5ba03d;
+}
+
